@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-900 text-white;
+  font-family: "Inter";
+}
+
+#root {
+  @apply h-screen w-screen;
+  display: flex;
+  max-height: stretch;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+  @apply h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-md bg-neutral-700 bg-opacity-25;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-neutral-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-opacity-75;
+}
